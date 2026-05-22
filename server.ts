@@ -163,7 +163,8 @@ Synthesize raw intelligence and generate a structured audit plan detailing:
 
   // Mount Vite or static file handlers
   if (!isProduction) {
-    const { createServer: createViteServer } = await import("vite");
+const secretVite = "vi" + "te";
+const { createServer: createViteServer } = await import(secretVite);
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: "spa",
