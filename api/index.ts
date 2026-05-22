@@ -56,7 +56,7 @@ Synthesize raw intelligence and generate a structured audit plan detailing:
 8. Sourcing strategy of how XinAo International (your physical on-ground support Team) will safeguard them.`;
 
     const response = await client.models.generateContent({
-      model: "gemini-3.5-flash",
+      model: "gemini-1.5-flash",
       contents: promptText,
       config: {
         responseMimeType: "application/json",
