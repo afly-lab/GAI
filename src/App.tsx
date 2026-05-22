@@ -259,7 +259,7 @@ export default function App() {
                       Verified Industrial Manufacturing Clusters in China
                     </span>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      {auditResult.manufacturingClusters.map((cluster, i) => (
+                      {(auditResult?.manufacturingClusters || []).map((cluster, i) => (
                         <div key={i} className="flex gap-4 p-5 bg-cream border border-ink/5 rounded-sm hover:border-gold/50 transition-all">
                           <div className="flex items-center justify-center p-3 rounded bg-cream-dark text-gold">
                             <MapPin className="w-5 h-5" />
@@ -292,10 +292,10 @@ export default function App() {
                   {/* Standards & Certifications */}
                   <div>
                     <span className="font-mono text-[9px] uppercase tracking-widest text-ink-faint block mb-3">
-                      Required Import testing &amp; certifications marks
+                      Required Import testing & certifications marks
                     </span>
                     <div className="flex flex-wrap gap-2">
-                      {auditResult.certificationRequirements.map((cert) => (
+                      {(auditResult?.certificationRequirements || []).map((cert) => (
                         <span key={cert} className="inline-flex items-center gap-1.5 bg-ink text-cream font-mono text-[10px] tracking-wider uppercase py-1.5 px-3 rounded-full">
                           <Check className="w-3 h-3 text-gold" />
                           {cert}
@@ -310,7 +310,7 @@ export default function App() {
                       Our Physical On-Site Inspection Points
                     </span>
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 list-none">
-                      {auditResult.onGroundInspectionChecklist.map((point, index) => (
+                      {(auditResult?.onGroundInspectionChecklist || []).map((point, index) => (
                         <li key={index} className="flex gap-2 text-sm text-ink-light">
                           <span className="font-serif font-semibold text-gold-dark">—</span>
                           <span>{point}</span>
@@ -464,7 +464,7 @@ export default function App() {
               </thead>
               <tbody className="divide-y divide-cream/5">
                 <tr>
-                  <td className="p-6 font-semibold text-cream/80">Monthly Retainer &amp; Fees</td>
+                  <td className="p-6 font-semibold text-cream/80">Monthly Retainer & Fees</td>
                   <td className="p-6 text-cream/60">Undefined kickbacks added per unit costs</td>
                   <td className="p-6 text-cream/60">$7,000+ Salaried Base + Visas + Logistics</td>
                   <td className="p-6 text-gold bg-cream/5 font-bold border-x border-gold-dark/40">From $499 Flat/Month | $0 Sourcing Fee</td>
@@ -485,7 +485,7 @@ export default function App() {
                   <td className="p-6 font-semibold text-cream/80">Physical On-ground Verification</td>
                   <td className="p-6 text-cream/40">Rarely or self-verified photos only</td>
                   <td className="p-6 text-emerald-400">In-person visits</td>
-                  <td className="p-6 text-emerald-400 bg-cream/5 font-bold border-x border-gold-dark/40">Continuous Live On-Site audits &amp; walkthroughs</td>
+                  <td className="p-6 text-emerald-400 bg-cream/5 font-bold border-x border-gold-dark/40">Continuous Live On-Site audits & walkthroughs</td>
                 </tr>
                 <tr>
                   <td className="p-6 font-semibold text-cream/80">On-Ground Legal Accountability</td>
@@ -584,7 +584,7 @@ export default function App() {
               </span>
               <div>
                 <span className="font-mono text-[9px] uppercase tracking-widest text-gold-dark font-bold block mt-1">Volume: Up to 8 Active Evaluations</span>
-                <h3 className="font-serif text-2xl text-ink mt-2">Scale &amp; Acceleration</h3>
+                <h3 className="font-serif text-2xl text-ink mt-2">Scale & Acceleration</h3>
                 <p className="text-xs text-ink-faint mt-1 leading-relaxed font-light">
                   Continuous pipeline expansion with advanced supply-chain mitigations and logistics performance.
                 </p>
@@ -646,7 +646,7 @@ export default function App() {
                   href="#contact"
                   className="w-full text-center bg-ink text-cream hover:bg-gold hover:text-ink font-mono text-[10px] uppercase tracking-widest font-bold py-3.5 px-4 rounded-sm transition-all duration-300 block"
                 >
-                  Select Scale &amp; Acceleration
+                  Select Scale & Acceleration
                 </a>
               </div>
             </div>
@@ -686,11 +686,11 @@ export default function App() {
                     </li>
                     <li className="flex items-start gap-2.5">
                       <span className="text-gold-light font-bold shrink-0">✓</span>
-                      <span>Trade show presence &amp; live reporting</span>
+                      <span>Trade show presence & live reporting</span>
                     </li>
                     <li className="flex items-start gap-2.5">
                       <span className="text-gold-light font-bold shrink-0">✓</span>
-                      <span>Raw material trace reports &amp; compliance</span>
+                      <span>Raw material trace reports & compliance</span>
                     </li>
                   </ul>
                 </div>
@@ -765,7 +765,7 @@ export default function App() {
             Verifiable Traceability
           </span>
           <h2 className="font-serif text-3xl md:text-4xl text-ink leading-snug">
-            Examine Our On-Ground Verification &amp; Order Management <br />
+            Examine Our On-Ground Verification & Order Management <br />
             <span className="italic font-light text-ink-faint">Standard Templates Before Commitment</span>
           </h2>
 
@@ -1077,7 +1077,7 @@ export default function App() {
                 </span>
               </div>
               <p className="text-xs text-cream/60 max-w-xl leading-relaxed font-light">
-                XinAo International Trade Co., Ltd. ensures that the End-to-End Factory Sourcing &amp; Strict On-Ground Governance workflow is seamless, legally bulletproof, and executed without intermediaries.
+                XinAo International Trade Co., Ltd. ensures that the End-to-End Factory Sourcing & Strict On-Ground Governance workflow is seamless, legally bulletproof, and executed without intermediaries.
               </p>
               
               <div className="space-y-1 pt-2">
