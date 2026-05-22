@@ -1,0 +1,6 @@
+{
+  "name": "XinAo Sourcing Office",
+  "description": "On-ground physical China representative services. Transparent subscription-based sourcing, live audits, and defect risk simulator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
