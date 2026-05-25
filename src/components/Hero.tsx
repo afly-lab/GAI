@@ -6,7 +6,7 @@ export default function Hero() {
     { number: "$0", label: "Product Markups Sourcing Agent Fee is 0%" },
     { number: "24h", label: "Ground Response Guarantee" },
     { number: "100%", label: "Pricing Transparency & Raw Invoices" },
-    { number: "6+", label: "International Importer Regions" }
+    { number: "6", label: "Export Markets Served from China" }
   ];
 
   return (
