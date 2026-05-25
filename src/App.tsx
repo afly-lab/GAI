@@ -749,7 +749,11 @@ export default function App() {
               </h2>
 
               <blockquote className="border-l-3 border-gold pl-6 text-lg italic text-ink-light font-serif">
-                "Having navigated the intricate complexities of the Chinese manufacturing landscape to represent international buyers on-site, I founded XinAo International Trade Co., Ltd. specifically to solve the frequent pain points that global buyers face on the ground. We built this service as a ready, hands-on solution to ensure total reliability, open communications, and 100% pricing clarity so our clients never have to compromise."
+               "For 4 years, I ran Havens Commerce Partners — a China Representative Office coordinating sourcing and export logistics for buyers across the US, Europe, Canada, Australia, the Middle East, and India.
+
+I watched the same failures repeat in every market: hidden markups, trading companies presented as manufacturers, certificates that nobody verified, and buyers overseas with no one on the ground who worked exclusively for them.
+
+I founded XinAo to be the operation I never found as an exporter — flat fee, zero commission, physically present, working only for the buyer."
               </blockquote>
             </div>
           </div>
