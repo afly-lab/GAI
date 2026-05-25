@@ -754,10 +754,8 @@ export default function App() {
 I watched the same failures repeat in every market: hidden markups, trading companies presented as manufacturers, certificates that nobody verified, and buyers overseas with no one on the ground who worked exclusively for them.
 
 I founded XinAo to be the operation I never found as an exporter — flat fee, zero commission, physically present, working only for the buyer."
-              </blockquote className="border-l-3 border-gold pl-6 text-lg italic text-ink-light font-serif">
-— Abdul Rahman, Founder & MD
-XinAo International Trade Co., Ltd.
-Wholly Foreign-Owned Enterprise (WFOE) · Registered in Hangzhou, China
+              </blockquote>
+
             </div>
           </div>
 
