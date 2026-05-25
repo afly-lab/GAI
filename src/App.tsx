@@ -1099,6 +1099,9 @@ I founded XinAo to be the operation I never found as an exporter — flat fee, z
                   804-5, Building 1, No.188, Jinbaihua North Road,<br />
                   Xihu District, Hangzhou, People's Republic of China
                 </p>
+                <p className="text-[9px] text-gold/60 font-mono uppercase tracking-widest mt-2">
+                  Wholly Foreign-Owned Enterprise (WFOE) · Registered in Hangzhou, PRC
+                </p>
               </div>
             </div>
 
