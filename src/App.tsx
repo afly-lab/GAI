@@ -759,12 +759,13 @@ I founded XinAo to be the operation I never found as an exporter — flat fee, z
                 <p className="font-semibold text-ink">— Abdul Rahman, Founder &amp; Managing Director</p>
                 <p>XinAo International Trade Co., Ltd.</p>
                 <p>Wholly Foreign-Owned Enterprise (WFOE) · Registered in Hangzhou, China</p>
-
+              </div>
             </div>
           </div>
 
         </div>
       </section>
+
 
       {/* VERIFIED PROOF BLOCK */}
       <section id="proof" className="py-24 bg-cream">
