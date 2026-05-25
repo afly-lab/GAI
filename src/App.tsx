@@ -755,6 +755,9 @@ I watched the same failures repeat in every market: hidden markups, trading comp
 
 I founded XinAo to be the operation I never found as an exporter — flat fee, zero commission, physically present, working only for the buyer."
               </blockquote>
+— Abdul Rahman, Founder & MD
+XinAo International Trade Co., Ltd.
+Wholly Foreign-Owned Enterprise (WFOE) · Registered in Hangzhou, China
             </div>
           </div>
 
