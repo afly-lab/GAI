@@ -827,9 +827,9 @@ export default function App() {
               <div>
                 <span className="font-mono text-[9px] uppercase tracking-widest text-gold-dark font-bold block mt-1 mb-3">Book within 24 hours</span>
                 <h3 className="font-serif text-2xl text-ink mt-1">Supplier Rescue Audit</h3>
-                <p className="text-xs text-ink-faint mt-2 leading-relaxed">60-minute review of your current supplier setup. Risk assessment and written 3-step action plan after the call. Zoom or WhatsApp video.</p>
+                <p className="text-xs text-ink-faint mt-2 leading-relaxed">Physical on-site visit to your supplier. Root cause identification & documentation. Written findings with photo evidence. Clear next-step action plan included</p>
                 <div className="flex items-baseline gap-1 my-6">
-                  <span className="font-serif text-5xl font-semibold text-ink">$79</span>
+                  <span className="font-serif text-5xl font-semibold text-ink">$149</span>
                   <span className="font-mono text-xs text-ink-faint">one-time</span>
                 </div>
                 <div className="border-t border-ink/10 pt-4">
