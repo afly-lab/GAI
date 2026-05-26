@@ -511,7 +511,7 @@ export default function App() {
       <section id="pricing" className="py-24 md:py-32 bg-cream">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           
-          <div className="text-center max-w-2xl mx-auto mb-10">>
+          <div className="text-center max-w-2xl mx-auto mb-10">
             <span className="font-mono text-xs uppercase tracking-widest text-gold font-semibold mb-3 block">
               Transparent Frameworks
             </span>
