@@ -519,7 +519,7 @@ export default function App() {
               Your China Fiduciary Ally
             </h2>
             <p className="text-ink-faint text-sm mt-4 font-light">
-              Choose your appropriate field operational level. Completely predictable flat-rate. No hidden factory commissions. Stop or cancel anytime.
+              Choose your engagement model. Flat-rate. No hidden factory commissions. Cancel anytime.
             </p>
           </div>
 
