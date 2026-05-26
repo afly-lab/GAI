@@ -819,7 +819,7 @@ export default function App() {
               </div>
             </div>
 
-            {/* Card 4 — China Sourcing Strategy Call */}
+            {/* Card 4 — China Supplier Rescue Audit */}
             <div className="bg-cream border border-gold hover:border-gold-dark p-8 rounded-sm flex flex-col justify-between hover:shadow-xl hover:shadow-gold/5 transition-all duration-300 relative shadow-md shadow-gold/[0.02]">
               <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-ink text-[8px] font-mono font-bold uppercase tracking-[0.14em] py-1 px-4 rounded-sm shadow-sm">
                 Most Popular Entry Point
