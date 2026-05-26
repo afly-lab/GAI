@@ -654,7 +654,7 @@ export default function App() {
             {/* Tier 3: Your In-House China Office */}
             <div className="bg-ink border-2 border-gold p-8 rounded-sm flex flex-col justify-between shadow-2xl shadow-ink/15 relative lg:-translate-y-2">
               <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gold text-ink text-[8.5px] font-mono font-bold uppercase tracking-[0.15em] py-1 px-4 rounded-full shadow-lg">
-                Literal mainland Office Infrastructure
+                Full Mainland Office Infrastructure
               </span>
               
               <div>
