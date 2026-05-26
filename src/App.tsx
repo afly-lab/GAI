@@ -1173,7 +1173,7 @@ I founded XinAo to be the operation I never found as an exporter — flat fee, z
                       </select>
                     </div>
                     <div>
-                      <label className="block font-mono text-[9px] uppercase tracking-widest text-ink-faint mb-2">Selected subscription tier</label>
+                      <label className="block font-mono text-[9px] uppercase tracking-widest text-ink-faint mb-2">Selected service or plan</label>
                       <select
                         value={inquireForm.plan}
                         onChange={(e) => setInquireForm({ ...inquireForm, plan: e.target.value })}
