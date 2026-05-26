@@ -106,7 +106,7 @@ export default function App() {
       const data = await response.json();
       if (data.success) {
         setInquireStatus("success");
-        setInquireMsg(data.message || "Your inquiry is officially registered. Our team will follow up shortly.");
+        setInquireMsg(data.message || "Inquiry received. We will respond within 24 hours. For faster contact: WhatsApp +8618718924056.");
       } else {
         setInquireStatus("error");
         setInquireMsg(data.error || "Inquiry submission failed. Please verify fields are entered.");
@@ -901,7 +901,7 @@ I founded XinAo to be the operation I never found as an exporter — flat fee, z
               {inquireStatus === "success" ? (
                 <div className="text-center py-12 space-y-4 animate-fade-up">
                   <CheckCircle2 className="w-16 h-16 text-emerald-500 mx-auto" />
-                  <h3 className="font-serif text-3xl font-medium text-ink italic">Inquiry Received</h3>
+                  <h3 className="font-serif text-3xl font-medium text-ink italic">Inquiry received. We will respond within 24 hours. For faster contact: WhatsApp +8618718924056</h3>
                   <p className="text-sm text-ink-light max-w-md mx-auto leading-relaxed">
                     {inquireMsg}
                   </p>
