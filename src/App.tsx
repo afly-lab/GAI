@@ -731,7 +731,135 @@ export default function App() {
               </div>
             </div>
 
+           </div>
+          )}
+
+          {/* ON-DEMAND SERVICES TAB */}
+          {pricingTab === "ondemand" && (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            {/* Card 1 — Supplier Authenticity Check */}
+            <div className="bg-cream border border-ink/15 hover:border-gold/60 p-8 rounded-sm flex flex-col justify-between hover:shadow-xl hover:shadow-ink/5 transition-all duration-300">
+              <div>
+                <span className="font-mono text-[9px] uppercase tracking-widest text-gold-dark font-bold block mb-3">Delivered within 48 hours</span>
+                <h3 className="font-serif text-2xl text-ink mt-1">Supplier Authenticity Check</h3>
+                <p className="text-xs text-ink-faint mt-2 leading-relaxed">Verify if your Alibaba or 1688 supplier is a real factory or trading company. Business license, address, and production capability — written report.</p>
+                <div className="flex items-baseline gap-1 my-6">
+                  <span className="font-serif text-5xl font-semibold text-ink">$49</span>
+                  <span className="font-mono text-xs text-ink-faint">one-time</span>
+                </div>
+                <div className="border-t border-ink/10 pt-4">
+                  <ul className="space-y-2.5 font-mono text-[10px] uppercase tracking-wider text-ink-light">
+                    <li className="flex items-start gap-2"><span className="text-gold font-bold shrink-0">✓</span><span>Business license verification (SAMR)</span></li>
+                    <li className="flex items-start gap-2"><span className="text-gold font-bold shrink-0">✓</span><span>Physical address & production check</span></li>
+                    <li className="flex items-start gap-2"><span className="text-gold font-bold shrink-0">✓</span><span>Factory vs trading company determination</span></li>
+                    <li className="flex items-start gap-2"><span className="text-gold font-bold shrink-0">✓</span><span>Written report with risk rating</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div className="mt-8">
+                <a href="#contact" onClick={() => setInquireForm(prev => ({ ...prev, plan: "On-Demand: Supplier Authenticity Check — $49" }))}
+                  className="w-full text-center border border-ink text-ink hover:bg-ink hover:text-cream font-mono text-[10px] uppercase tracking-widest font-bold py-3 px-4 rounded-sm transition-all duration-300 block">
+                  Request This Service →
+                </a>
+              </div>
+            </div>
+
+            {/* Card 2 — Single Product Sourcing Report */}
+            <div className="bg-cream border border-ink/15 hover:border-gold/60 p-8 rounded-sm flex flex-col justify-between hover:shadow-xl hover:shadow-ink/5 transition-all duration-300">
+              <div>
+                <span className="font-mono text-[9px] uppercase tracking-widest text-gold-dark font-bold block mb-3">Delivered within 48 hours</span>
+                <h3 className="font-serif text-2xl text-ink mt-1">Single Product Sourcing Report</h3>
+                <p className="text-xs text-ink-faint mt-2 leading-relaxed">Manufacturing hubs, MOQ ranges, unit cost benchmarks, and top 3 verified supplier options for one specific product category.</p>
+                <div className="flex items-baseline gap-1 my-6">
+                  <span className="font-serif text-5xl font-semibold text-ink">$69</span>
+                  <span className="font-mono text-xs text-ink-faint">one-time</span>
+                </div>
+                <div className="border-t border-ink/10 pt-4">
+                  <ul className="space-y-2.5 font-mono text-[10px] uppercase tracking-wider text-ink-light">
+                    <li className="flex items-start gap-2"><span className="text-gold font-bold shrink-0">✓</span><span>Primary manufacturing hubs & clusters</span></li>
+                    <li className="flex items-start gap-2"><span className="text-gold font-bold shrink-0">✓</span><span>MOQ ranges & unit cost benchmarks</span></li>
+                    <li className="flex items-start gap-2"><span className="text-gold font-bold shrink-0">✓</span><span>Top 3 verified supplier options</span></li>
+                    <li className="flex items-start gap-2"><span className="text-gold font-bold shrink-0">✓</span><span>Required certifications & compliance notes</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div className="mt-8">
+                <a href="#contact" onClick={() => setInquireForm(prev => ({ ...prev, plan: "On-Demand: Single Product Sourcing Report — $69" }))}
+                  className="w-full text-center border border-ink text-ink hover:bg-ink hover:text-cream font-mono text-[10px] uppercase tracking-widest font-bold py-3 px-4 rounded-sm transition-all duration-300 block">
+                  Request This Service →
+                </a>
+              </div>
+            </div>
+
+            {/* Card 3 — Pre-Shipment Spot Inspection */}
+            <div className="bg-cream border border-ink/15 hover:border-gold/60 p-8 rounded-sm flex flex-col justify-between hover:shadow-xl hover:shadow-ink/5 transition-all duration-300">
+              <div>
+                <span className="font-mono text-[9px] uppercase tracking-widest text-gold-dark font-bold block mb-3">Scheduled within 72 hours</span>
+                <h3 className="font-serif text-2xl text-ink mt-1">Pre-Shipment Spot Inspection</h3>
+                <p className="text-xs text-ink-faint mt-2 leading-relaxed">Single batch QC check before loading. Photo/video documentation, AQL spot check, and pass/fail recommendation for one shipment.</p>
+                <div className="flex items-baseline gap-1 my-6">
+                  <span className="font-serif text-5xl font-semibold text-ink">$99</span>
+                  <span className="font-mono text-xs text-ink-faint">one-time</span>
+                </div>
+                <div className="border-t border-ink/10 pt-4">
+                  <ul className="space-y-2.5 font-mono text-[10px] uppercase tracking-wider text-ink-light">
+                    <li className="flex items-start gap-2"><span className="text-gold font-bold shrink-0">✓</span><span>On-site inspection with photo/video log</span></li>
+                    <li className="flex items-start gap-2"><span className="text-gold font-bold shrink-0">✓</span><span>AQL 2.5 random sampling</span></li>
+                    <li className="flex items-start gap-2"><span className="text-gold font-bold shrink-0">✓</span><span>Pass / fail recommendation report</span></li>
+                    <li className="flex items-start gap-2"><span className="text-gold font-bold shrink-0">✓</span><span>Defect documentation if found</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div className="mt-8">
+                <a href="#contact" onClick={() => setInquireForm(prev => ({ ...prev, plan: "On-Demand: Pre-Shipment Spot Inspection — $99" }))}
+                  className="w-full text-center border border-ink text-ink hover:bg-ink hover:text-cream font-mono text-[10px] uppercase tracking-widest font-bold py-3 px-4 rounded-sm transition-all duration-300 block">
+                  Request This Service →
+                </a>
+              </div>
+            </div>
+
+            {/* Card 4 — China Sourcing Strategy Call */}
+            <div className="bg-cream border border-gold hover:border-gold-dark p-8 rounded-sm flex flex-col justify-between hover:shadow-xl hover:shadow-gold/5 transition-all duration-300 relative shadow-md shadow-gold/[0.02]">
+              <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-ink text-[8px] font-mono font-bold uppercase tracking-[0.14em] py-1 px-4 rounded-sm shadow-sm">
+                Most Popular Entry Point
+              </span>
+              <div>
+                <span className="font-mono text-[9px] uppercase tracking-widest text-gold-dark font-bold block mt-1 mb-3">Book within 24 hours</span>
+                <h3 className="font-serif text-2xl text-ink mt-1">China Sourcing Strategy Call</h3>
+                <p className="text-xs text-ink-faint mt-2 leading-relaxed">60-minute review of your current supplier setup. Risk assessment and written 3-step action plan after the call. Zoom or WhatsApp video.</p>
+                <div className="flex items-baseline gap-1 my-6">
+                  <span className="font-serif text-5xl font-semibold text-ink">$79</span>
+                  <span className="font-mono text-xs text-ink-faint">one-time</span>
+                </div>
+                <div className="border-t border-ink/10 pt-4">
+                  <ul className="space-y-2.5 font-mono text-[10px] uppercase tracking-wider text-ink-light">
+                    <li className="flex items-start gap-2"><span className="text-gold font-bold shrink-0">✓</span><span>60-minute live call with MD</span></li>
+                    <li className="flex items-start gap-2"><span className="text-gold font-bold shrink-0">✓</span><span>Current supplier risk assessment</span></li>
+                    <li className="flex items-start gap-2"><span className="text-gold font-bold shrink-0">✓</span><span>Written 3-step action plan after call</span></li>
+                    <li className="flex items-start gap-2"><span className="text-gold font-bold shrink-0">✓</span><span>Zoom or WhatsApp video</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div className="mt-8">
+                <a href="#contact" onClick={() => setInquireForm(prev => ({ ...prev, plan: "On-Demand: China Sourcing Strategy Call — $79" }))}
+                  className="w-full text-center bg-ink text-cream hover:bg-gold hover:text-ink font-mono text-[10px] uppercase tracking-widest font-bold py-3.5 px-4 rounded-sm transition-all duration-300 block">
+                  Request This Service →
+                </a>
+              </div>
+            </div>
+
           </div>
+          )}
+
+          <div className="mt-10 text-center">
+            <p className="font-mono text-[10px] uppercase tracking-widest text-ink-faint">
+              {pricingTab === "monthly"
+                ? "All plans include 0% markup · Raw invoices shared directly · NDA before any product details"
+                : "On-demand services include a written deliverable · Most clients convert to a monthly retainer after first engagement"}
+            </p>
+          </div>
+
         </div>
       </section>
 
