@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { AlertOctagon, HelpCircle, Sparkles, ShieldCheck, ShieldAlert, Award } from "lucide-react";
+import { AlertOctagon, HelpCircle, Sparkles, ShieldCheck, ShieldAlert, Award, DollarSign, Building2, Plane, MessageSquareOff, Scale, Clock } from "lucide-react";
 
 export default function ProblemSection() {
   // Simulator State
@@ -13,24 +13,18 @@ export default function ProblemSection() {
   const [safetyRating, setSafetyRating] = useState(0);
 
   useEffect(() => {
-    // Hidden commission / leakage calculation:
-    // Alibaba general leakage is 10% (trading companies acting as factories).
-    // Traditional agents inflate factory prices by 15-20% through undisclosed rebates.
-    // Direct with no background check has ~5% overhead but higher overall scam chances.
     let leakPct = 0;
     if (channel === "alibaba") leakPct = 0.12; 
     else if (channel === "agent") leakPct = 0.18;
     else leakPct = 0.04;
 
-    // Adjust on verification: physical inspections cut kickback opportunities
     if (verification === "physical") leakPct -= 0.03;
     if (leakPct < 0) leakPct = 0.01;
 
     let computedLeakage = Math.round(budget * leakPct);
 
-    // Defect risk calculates based on verification, channels and certs
-    let baseDefect = 28; // Default 28% defect risk
-    if (channel === "alibaba") baseDefect += 10; // high trading company risk
+    let baseDefect = 28;
+    if (channel === "alibaba") baseDefect += 10;
     if (channel === "agent") baseDefect -= 5;
 
     if (verification === "video") baseDefect -= 15;
@@ -41,8 +35,7 @@ export default function ProblemSection() {
 
     if (baseDefect < 1) baseDefect = 1.2;
 
-    // Safety Score out of 100
-    let score = 30; // base score
+    let score = 30;
     if (channel === "direct") score += 10;
     else if (channel === "alibaba") score += 5;
     else score += 15;
@@ -63,34 +56,34 @@ export default function ProblemSection() {
 
   const cards = [
     {
-      title: "Undisclosed Factory Marks",
+      title: "Hidden Factory Markups",
       text: "Most traditional sourcing agents inflate the raw factory costs by 10-25% without disclosing it, presenting themselves as 'fixed 5% agencies'. You lose margin silently.",
-      icon: "💸"
+      icon: DollarSign
     },
     {
       title: "Trading Companies as Manufacturers",
       text: "Beautiful Alibaba profiles often mask regional trading companies pretending to be factories. They outsource production, diluting accountability and increasing safety risks.",
-      icon: "🏭"
+      icon: Building2
     },
     {
       title: "Extreme Flight & Visual Overhead",
       text: "A single commercial travel to direct industrial zones or Canton Fair costs upwards of $5,000 in visa expenses, hotels, and interpreters merely to exchange greeting letters.",
-      icon: "✈️"
+      icon: Plane
     },
     {
       title: "Communication Gaps & Delays",
       text: "Communicating overseas through translation tools results in severe material misunderstandings. Faults are often only noticed when port custom container arrives.",
-      icon: "📵"
+      icon: MessageSquareOff
     },
     {
       title: "No In-Country Legal Safeguards",
       text: "Operating as an overseas entity renders enforcing standard purchase contracts nearly impossible once transactions are settled through private channels.",
-      icon: "⚖️"
+      icon: Scale
     },
     {
       title: "Supplier Fatigue & Deadlines",
       text: "Without consistent physical local presence checking on your project schedules, production queues are prioritised for larger nearby local business operations.",
-      icon: "🕐"
+      icon: Clock
     }
   ];
 
@@ -101,7 +94,7 @@ export default function ProblemSection() {
         {/* Section Header */}
         <div className="max-w-3xl mb-16">
           <span className="font-mono text-xs uppercase tracking-widest text-gold font-semibold mb-3 block">
-            Sourcing Vulnerabilities
+            Why Traditional China Sourcing Breaks Down
           </span>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-ink leading-tight">
             Why Most Traditional China<br />
@@ -114,17 +107,22 @@ export default function ProblemSection() {
 
         {/* 6 problem cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
-          {cards.map((card, i) => (
-            <div
-              key={i}
-              className="bg-cream border border-ink/5 p-8 rounded-sm hover:-translate-y-1 hover:shadow-xl hover:shadow-ink/5 transition-all duration-300 relative group overflow-hidden"
-            >
-              <div className="absolute left-0 bottom-0 w-full h-[3px] bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-              <div className="text-3xl mb-4">{card.icon}</div>
-              <h3 className="font-sans font-semibold text-lg text-ink mb-3">{card.title}</h3>
-              <p className="text-ink-faint text-sm leading-relaxed">{card.text}</p>
-            </div>
-          ))}
+          {cards.map((card, i) => {
+            const IconComponent = card.icon;
+            return (
+              <div
+                key={i}
+                className="bg-cream border border-ink/5 p-8 rounded-sm hover:-translate-y-1 hover:shadow-xl hover:shadow-ink/5 transition-all duration-300 relative group overflow-hidden"
+              >
+                <div className="absolute left-0 bottom-0 w-full h-[3px] bg-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                <div className="mb-4">
+                  <IconComponent className="w-6 h-6 text-gold" />
+                </div>
+                <h3 className="font-sans font-semibold text-lg text-ink mb-3">{card.title}</h3>
+                <p className="text-ink-faint text-sm leading-relaxed">{card.text}</p>
+              </div>
+            );
+          })}
         </div>
 
         {/* SUPPLY CHAIN RISK CALCULATOR */}
@@ -306,7 +304,7 @@ export default function ProblemSection() {
                   href="#contact"
                   className="w-full text-center bg-gold hover:bg-ink text-ink hover:text-cream font-mono text-[10px] uppercase tracking-widest font-bold py-3 px-4 rounded-sm transition-all duration-300 block"
                 >
-                  Request Ground Sourcing Audit
+                  Show Me How to Fix This →
                 </a>
               </div>
             </div>
