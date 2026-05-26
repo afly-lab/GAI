@@ -834,10 +834,10 @@ export default function App() {
                 </div>
                 <div className="border-t border-ink/10 pt-4">
                   <ul className="space-y-2.5 font-mono text-[10px] uppercase tracking-wider text-ink-light">
-                    <li className="flex items-start gap-2"><span className="text-gold font-bold shrink-0">✓</span><span>60-minute live call with MD</span></li>
-                    <li className="flex items-start gap-2"><span className="text-gold font-bold shrink-0">✓</span><span>Current supplier risk assessment</span></li>
-                    <li className="flex items-start gap-2"><span className="text-gold font-bold shrink-0">✓</span><span>Written 3-step action plan after call</span></li>
-                    <li className="flex items-start gap-2"><span className="text-gold font-bold shrink-0">✓</span><span>Zoom or WhatsApp video</span></li>
+                    <li className="flex items-start gap-2"><span className="text-gold font-bold shrink-0">✓</span><span>Physical on-site visit to your supplier</span></li>
+                    <li className="flex items-start gap-2"><span className="text-gold font-bold shrink-0">✓</span><span>Root cause identification & documentation</span></li>
+                    <li className="flex items-start gap-2"><span className="text-gold font-bold shrink-0">✓</span><span>Written findings with photo evidence</span></li>
+                    <li className="flex items-start gap-2"><span className="text-gold font-bold shrink-0">✓</span><span>Clear next-step action plan included</span></li>
                   </ul>
                 </div>
               </div>
