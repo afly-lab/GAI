@@ -34,7 +34,8 @@ export default function App() {
   const [emailValidationError, setEmailValidationError] = useState("");
   const [inquireStatus, setInquireStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [inquireMsg, setInquireMsg] = useState("");
-  const [wechatCopied, setWechatCopied] = useState(false);
+   const [wechatCopied, setWechatCopied] = useState(false);
+  const [pricingTab, setPricingTab] = useState<"monthly" | "ondemand">("monthly");
 
   // Accordion active indexes
   const [faqOpen, setFaqOpen] = useState<{ [key: number]: boolean }>({});
