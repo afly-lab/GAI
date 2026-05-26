@@ -511,7 +511,7 @@ export default function App() {
       <section id="pricing" className="py-24 md:py-32 bg-cream">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           
-          <div className="text-center max-w-2xl mx-auto mb-16">
+          <div className="text-center max-w-2xl mx-auto mb-10">>
             <span className="font-mono text-xs uppercase tracking-widest text-gold font-semibold mb-3 block">
               Transparent Frameworks
             </span>
@@ -521,8 +521,32 @@ export default function App() {
             <p className="text-ink-faint text-sm mt-4 font-light">
               Choose your engagement model. Flat-rate. No hidden factory commissions. Cancel anytime.
             </p>
+         </div>
+
+          {/* Pricing Tab Toggle */}
+          <div className="flex justify-center mb-12">
+            <div className="flex bg-cream-dark border border-ink/10 rounded-sm p-1 gap-1">
+              <button
+                onClick={() => setPricingTab("monthly")}
+                className={`font-mono text-[10px] uppercase tracking-widest font-bold py-2.5 px-6 rounded-sm transition-all duration-200 ${
+                  pricingTab === "monthly" ? "bg-ink text-cream" : "text-ink-faint hover:text-ink"
+                }`}
+              >
+                Monthly Retainer
+              </button>
+              <button
+                onClick={() => setPricingTab("ondemand")}
+                className={`font-mono text-[10px] uppercase tracking-widest font-bold py-2.5 px-6 rounded-sm transition-all duration-200 ${
+                  pricingTab === "ondemand" ? "bg-ink text-cream" : "text-ink-faint hover:text-ink"
+                }`}
+              >
+                On-Demand Services
+              </button>
+            </div>
           </div>
 
+          {/* MONTHLY RETAINER TAB */}
+          {pricingTab === "monthly" && (
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             
             {/* Tier 1: Managed Launch */}
