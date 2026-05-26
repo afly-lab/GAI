@@ -835,7 +835,7 @@ I founded XinAo to be the operation I never found as an exporter — flat fee, z
                 a: "Yes. A legally binding NDA is signed with our established company entity before you share specs or manufacturer details. Under our open relations policy, we are fully accountable for safeguarding your designs and IP with direct on-ground protections."
               },
               {
-                q: "Why do you refuse standard supplier commission commission model?",
+                q: "Why do you refuse the standard supplier commission model?",
                 a: "Traditional agencies make money by negotiating kickbacks from the factory, hiding these costs inside inflated unit prices. This model creates a conflict of interest, where the agent prioritizes the highest-paying factory over quality. Our flat monthly retainer aligns us entirely with your budget and standards."
               },
               {
