@@ -572,7 +572,7 @@ export default function App() {
                   href="#contact"
                   className="w-full text-center border border-ink text-ink hover:bg-ink hover:text-cream font-mono text-[10px] uppercase tracking-widest font-bold py-3 px-4 rounded-sm transition-all duration-300 block"
                 >
-                  Select Managed Launch
+                  Start My China Audit →
                 </a>
               </div>
             </div>
@@ -646,7 +646,7 @@ export default function App() {
                   href="#contact"
                   className="w-full text-center bg-ink text-cream hover:bg-gold hover:text-ink font-mono text-[10px] uppercase tracking-widest font-bold py-3.5 px-4 rounded-sm transition-all duration-300 block"
                 >
-                  Select Scale & Acceleration
+                  Scale My Supply Chain →
                 </a>
               </div>
             </div>
@@ -701,7 +701,7 @@ export default function App() {
                   href="#contact"
                   className="w-full text-center bg-gold hover:bg-cream text-ink font-mono text-[10px] uppercase tracking-widest font-bold py-3.5 px-4 rounded-sm transition-all duration-300 block"
                 >
-                  Acquire China Office
+                  Build My China Office →
                 </a>
               </div>
             </div>
