@@ -366,7 +366,7 @@ export default function SourcingAuditWidget() {
                       <p className="text-xs text-ink-faint mt-1">Book a free discovery call to assign our direct on-ground partner team to locate these manufacturers on-site.</p>
                     </div>
                     <a
-                      href={`https://wa.me/8618718924056?text=Hi%2C%20I've%20run%20an%20audit%20for%20${encodeURIComponent(result.productName)}%20and%20want%252520to%252520succeed%252520in%252520locating%252520it`}
+                      href={`https://wa.me/8619560110778?text=Hi%2C%20I've%20run%20an%20audit%20for%20${encodeURIComponent(result.productName)}%20and%20want%252520to%252520succeed%252520in%252520locating%252520it`}
                       target="_blank"
                       className="inline-flex items-center gap-2 bg-ink text-cream hover:bg-gold hover:text-ink font-mono text-[10px] uppercase font-bold px-5 py-3 rounded-sm transition-all text-center shrink-0"
                     >
