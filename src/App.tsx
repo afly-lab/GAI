@@ -107,7 +107,7 @@ export default function App() {
       const data = await response.json();
       if (data.success) {
         setInquireStatus("success");
-        setInquireMsg(data.message || "Inquiry received. We will respond within 24 hours. For faster contact: WhatsApp +8618718924056.");
+        setInquireMsg(data.message || "Inquiry received. We will respond within 24 hours. For faster contact: WhatsApp +8619560110778.");
       } else {
         setInquireStatus("error");
         setInquireMsg(data.error || "Inquiry submission failed. Please verify fields are entered.");
@@ -940,7 +940,7 @@ I founded XinAo to be the operation I never found as an exporter — flat fee, z
                 Review an authentic on-site industrial supplier vetting. Includes detailed pictures of business license validation, machine floor diagnostics, testing machinery logs, and staff verification metrics.
               </p>
               <a
-                href="https://wa.me/8618718924056?text=Hi%2C%20I'd%20like%20to%20see%20a%20sample%20manufacturer%20audit%20report"
+                href="https://wa.me/8619560110778?text=Hi%2C%20I'd%20like%20to%20see%20a%20sample%20manufacturer%20audit%20report"
                 target="_blank"
                 className="font-mono text-[10px] uppercase tracking-widest text-gold-dark font-bold hover:text-ink block"
               >
@@ -955,7 +955,7 @@ I founded XinAo to be the operation I never found as an exporter — flat fee, z
                 See exactly how our on-ground representatives check tolerances for a finished batch. Watch detailed measurements, solder joint testing, functional performance checks, and container seals validation.
               </p>
               <a
-                href="https://wa.me/8618718924056?text=Hi%2C%20I'd%20like%20to%20see%20a%20sample%20quality%20control%20video%20log"
+                href="https://wa.me/8619560110778?text=Hi%2C%20I'd%20like%20to%20see%20a%20sample%20quality%20control%20video%20log"
                 target="_blank"
                 className="font-mono text-[10px] uppercase tracking-widest text-gold-dark font-bold hover:text-ink block"
               >
@@ -1054,7 +1054,7 @@ I founded XinAo to be the operation I never found as an exporter — flat fee, z
               {inquireStatus === "success" ? (
                 <div className="text-center py-12 space-y-4 animate-fade-up">
                   <CheckCircle2 className="w-16 h-16 text-emerald-500 mx-auto" />
-                  <h3 className="font-serif text-3xl font-medium text-ink italic">Inquiry received. We will respond within 24 hours. For faster contact: WhatsApp +8618718924056</h3>
+                  <h3 className="font-serif text-3xl font-medium text-ink italic">Inquiry received. We will respond within 24 hours. For faster contact: WhatsApp +8619560110778</h3>
                   <p className="text-sm text-ink-light max-w-md mx-auto leading-relaxed">
                     {inquireMsg}
                   </p>
@@ -1267,7 +1267,7 @@ I founded XinAo to be the operation I never found as an exporter — flat fee, z
               <div className="flex flex-wrap gap-x-4 gap-y-3 justify-start lg:justify-end">
                 {/* Voice Call Badge */}
                 <a 
-                  href="tel:+8618718924056"
+                  href="tel:+8619560110778"
                   className="group flex items-center gap-2.5 bg-cream-dark/5 px-4 py-2.5 rounded-sm border border-cream/10 hover:border-gold hover:bg-cream-dark/10 transition-all duration-300 cursor-pointer text-left"
                 >
                   <Phone className="w-3.5 h-3.5 text-gold group-hover:scale-110 transition-transform" />
@@ -1276,7 +1276,7 @@ I founded XinAo to be the operation I never found as an exporter — flat fee, z
 
                 {/* WhatsApp Badge */}
                 <a 
-                  href="https://wa.me/8618718924056?text=Hi%2C%20I'd%20like%20to%20discuss%20sourcing%20coordination."
+                  href="https://wa.me/8619560110778?text=Hi%2C%20I'd%20like%20to%20discuss%20sourcing%20coordination."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center gap-2.5 bg-cream-dark/5 px-4 py-2.5 rounded-sm border border-cream/10 hover:border-gold hover:bg-cream-dark/10 transition-all duration-300 cursor-pointer text-left"
@@ -1288,7 +1288,7 @@ I founded XinAo to be the operation I never found as an exporter — flat fee, z
                 {/* WeChat Badge */}
                 <div 
                   onClick={() => {
-                    navigator.clipboard.writeText("8618718924056");
+                    navigator.clipboard.writeText("8619560110778");
                     setWechatCopied(true);
                     setTimeout(() => setWechatCopied(false), 3000);
                   }}
@@ -1337,7 +1337,7 @@ I founded XinAo to be the operation I never found as an exporter — flat fee, z
 
       {/* Floating Active WhatsApp button */}
       <a
-        href="https://wa.me/8618718924056?text=Hi%2C%20I'd%20like%20to%20schedule%20a%20free%20China%20Sourcing%20Audit."
+        href="https://wa.me/8619560110778?text=Hi%2C%20I'd%20like%20to%20schedule%20a%20free%20China%20Sourcing%20Audit."
         target="_blank"
         className="fixed bottom-6 right-6 p-4 rounded-full bg-[#25D366] text-white shadow-lg hover:scale-105 transition-all duration-300 z-40 flex items-center justify-center"
         aria-label="Direct WhatsApp Contact"
